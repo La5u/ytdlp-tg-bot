@@ -1,0 +1,12 @@
+[Unit]
+Description=Telegram video download bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/lasu/coding/bot
+ExecStart=/home/lasu/.local/bin/uv run bot.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

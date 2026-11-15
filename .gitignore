@@ -1,0 +1,4 @@
+.env
+cache.json
+reddit-cookies.txt
+__pycache__/
